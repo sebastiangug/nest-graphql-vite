@@ -15,7 +15,7 @@ import { join } from 'path';
           playground: true,
           autoSchemaFile: 'schema.gql',
           sortSchema: true,
-          path: join(process.cwd(), 'src/graphql.ts'),
+          path: '/graphql',
           cors: {
             origin: ['*'],
           },
