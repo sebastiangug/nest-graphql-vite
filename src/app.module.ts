@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { RootResolver } from './resolvers/root.resolver';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -14,10 +15,11 @@ import { RootResolver } from './resolvers/root.resolver';
           playground: true,
           autoSchemaFile: 'schema.gql',
           sortSchema: true,
+          path: join(process.cwd(), 'src/graphql.ts'),
+          cors: {
+            origin: ['*'],
+          },
         };
-        const origins = ['*'];
-        config.cors = { origin: origins, credentials: true };
-        config.path = 'graphql';
         return config;
       },
       inject: [],
