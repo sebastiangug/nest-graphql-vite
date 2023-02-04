@@ -35,8 +35,8 @@
     "ts-node": "10.8.1",
     "tsconfig-paths": "3.10.1",
     "typescript": "4.7.4",
-    "vite-plugin-node": "1.0.0",
-    "vite": "2.9.13",
+    "vite-plugin-node": "3.0.2",
+    "vite": "4.1.1",
     "@swc/core": "1.2.207",
     "vite-tsconfig-paths": "3.5.0"
   }
