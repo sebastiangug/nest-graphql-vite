@@ -1,16 +1,18 @@
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
-import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import {
+  ApolloFederationDriver,
+  ApolloFederationDriverConfig,
+} from '@nestjs/apollo';
 import { RootResolver } from './resolvers/root.resolver';
-import { join } from 'path';
 
 @Module({
   imports: [
-    GraphQLModule.forRootAsync<ApolloDriverConfig>({
-      driver: ApolloDriver,
+    GraphQLModule.forRootAsync<ApolloFederationDriverConfig>({
+      driver: ApolloFederationDriver,
       imports: [],
       useFactory: () => {
-        const config: ApolloDriverConfig = {
+        const config: ApolloFederationDriverConfig = {
           debug: true,
           playground: true,
           autoSchemaFile: 'schema.gql',
