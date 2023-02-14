@@ -1,9 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@apollo/federation': 0.38.1
-  '@apollo/gateway': 2.3.0
-  '@apollo/subgraph': 2.3.0
+  '@apollo/gateway': 2.1.2
+  '@apollo/subgraph': 2.1.2
   '@google-cloud/logging': 10.4.0
   '@liaoliaots/nestjs-redis': 9.0.5
   '@nestjs/apollo': '10.1.7 '
@@ -50,15 +49,14 @@ specifiers:
   wait-on: 6.0.1
 
 dependencies:
-  '@apollo/federation': 0.38.1_graphql@16.6.0
-  '@apollo/gateway': 2.3.0_graphql@16.6.0
-  '@apollo/subgraph': 2.3.0_graphql@16.6.0
+  '@apollo/gateway': 2.1.2_graphql@16.6.0
+  '@apollo/subgraph': 2.1.2_graphql@16.6.0
   '@google-cloud/logging': 10.4.0
   '@liaoliaots/nestjs-redis': 9.0.5_f5pksywwhyvuyxewmjt76gvbfy
-  '@nestjs/apollo': 10.1.7_nhifehbxbqf4xuejxtwyi4bl4i
+  '@nestjs/apollo': 10.1.7_3kbgmav3jhdkb2lpmwuooxn7su
   '@nestjs/common': 9.3.2_welcnyot5bzd5wa2aovbkxpi4i
   '@nestjs/core': 9.3.2_ycjbddrylidedcgziugeskgnam
-  '@nestjs/graphql': 10.1.7_j3knht5w23yiivui53rhp2udou
+  '@nestjs/graphql': 10.1.7_fh733p5hzepwwwbg4kmilggkly
   '@nestjs/platform-express': 9.3.2_fnnujyxcjtinmcbby3pisnawpe
   '@redis/graph': 1.1.0
   '@sendgrid/mail': 7.7.0
@@ -225,19 +223,19 @@ packages:
       graphql: 16.6.0
     dev: false
 
-  /@apollo/composition/2.3.0_graphql@16.6.0:
-    resolution: {integrity: sha512-bNPc0NuWB+znlhht1v4GI+sMKl7v0trnT2cKnhO6wA/78kiXj1pKaWl2zGhOaQLtxjFDGk9cNSobtnAkPN4YRg==}
+  /@apollo/composition/2.3.2_graphql@16.6.0:
+    resolution: {integrity: sha512-bUoGq9jJ+IfYSKY0oO/64XWIKPe13XY+eePaPIiQksKu/M0iylCI6RmNNFlLQAax2jHpILJ7+1X8LuURN6zjjA==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/federation-internals': 2.3.0_graphql@16.6.0
-      '@apollo/query-graphs': 2.3.0_graphql@16.6.0
+      '@apollo/federation-internals': 2.3.2_graphql@16.6.0
+      '@apollo/query-graphs': 2.3.2_graphql@16.6.0
       graphql: 16.6.0
     dev: false
 
-  /@apollo/federation-internals/2.3.0_graphql@16.6.0:
-    resolution: {integrity: sha512-VHulD2AXhrB6bindPIWEV8aE5lOjADi2pSsZKD3aPZL0jJzRxFNz2wOaP0DnTFUbm1FXlNuHJiJrRjlpIURQbg==}
+  /@apollo/federation-internals/2.3.2_graphql@16.6.0:
+    resolution: {integrity: sha512-XtXQag8sV75BoNlzu6ci5mn2U+QGNZdkRB8Igi5e31VqnBx4XSdvbyx6Ht1lvYru9GCYx6OqGWZqqPqAXG72/Q==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
@@ -247,31 +245,16 @@ packages:
       js-levenshtein: 1.1.6
     dev: false
 
-  /@apollo/federation/0.38.1_graphql@16.6.0:
-    resolution: {integrity: sha512-miifyAEsFgiYKeM3lUHFH6+vKa2vm9dXKSyWVpX6oeJiPblFLe2/iByN3psZQO2sRdVqO1OKYrGXdgKc74XDKw==}
+  /@apollo/gateway/2.1.2_graphql@16.6.0:
+    resolution: {integrity: sha512-fQm/6fkRlbQWveK97CtyZROwXomCKth0WMnJhqssasRToUnaI1tpIkuu1iYZlo/9I3VO4Q9hFu0BXl6NH9BiLQ==}
     engines: {node: '>=12.13.0'}
-    peerDependencies:
-      graphql: ^15.8.0 || ^16.0.0
-    dependencies:
-      '@apollo/subgraph': 0.6.1_graphql@16.6.0
-      apollo-server-types: 3.7.1_graphql@16.6.0
-      graphql: 16.6.0
-      lodash.xorby: 4.7.0
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
-  /@apollo/gateway/2.3.0_graphql@16.6.0:
-    resolution: {integrity: sha512-di6nbMH/T67Q2rWfgsdDVVkn5Oc02Oo1jZjjzDf95G6lEfDdCOconq63lyc921P3xz/UqZT7I7IlbpOhR3SRIw==}
-    engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/composition': 2.3.0_graphql@16.6.0
-      '@apollo/federation-internals': 2.3.0_graphql@16.6.0
-      '@apollo/query-planner': 2.3.0_graphql@16.6.0
+      '@apollo/composition': 2.3.2_graphql@16.6.0
+      '@apollo/federation-internals': 2.3.2_graphql@16.6.0
+      '@apollo/query-planner': 2.3.2_graphql@16.6.0
       '@apollo/server-gateway-interface': 1.1.0_graphql@16.6.0
-      '@apollo/usage-reporting-protobuf': 4.0.2
       '@apollo/utils.createhash': 1.1.0
       '@apollo/utils.fetcher': 1.1.1
       '@apollo/utils.isnodelike': 1.1.0
@@ -279,11 +262,12 @@ packages:
       '@josephg/resolvable': 1.0.1
       '@opentelemetry/api': 1.4.0
       '@types/node-fetch': 2.6.2
+      apollo-reporting-protobuf: 3.3.3
       async-retry: 1.3.3
       graphql: 16.6.0
       loglevel: 1.8.1
       lru-cache: 7.14.1
-      make-fetch-happen: 11.0.3
+      make-fetch-happen: 10.2.1
       node-abort-controller: 3.1.1
       node-fetch: 2.6.9
     transitivePeerDependencies:
@@ -331,13 +315,13 @@ packages:
       long: 4.0.0
     dev: false
 
-  /@apollo/query-graphs/2.3.0_graphql@16.6.0:
-    resolution: {integrity: sha512-Z1m5O251Hn+YbptANxYIKO0Ag3Mav4Z7Fhxr19G/jmaS7iJrBIlOJ1HLgVjVjko+kc2dGKbOozF4W1UhYBI0Iw==}
+  /@apollo/query-graphs/2.3.2_graphql@16.6.0:
+    resolution: {integrity: sha512-NC/+JfvSZ7i+1wOr0YRX7T156exYbPUeG6LPibENTNleJrPfCSfULlUIsqwVY87/c7bUwFXu+oK8bTdRXfxIQg==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/federation-internals': 2.3.0_graphql@16.6.0
+      '@apollo/federation-internals': 2.3.2_graphql@16.6.0
       '@types/uuid': 8.3.4
       deep-equal: 2.2.0
       graphql: 16.6.0
@@ -345,14 +329,14 @@ packages:
       uuid: 9.0.0
     dev: false
 
-  /@apollo/query-planner/2.3.0_graphql@16.6.0:
-    resolution: {integrity: sha512-BHH1yMvyBlzJnNIKt3TxeR92JD4QPWmGnbILp7UrSiuUJBM+7YD/LCIgdVLXFV/mtlWPwHDcaFzaZoIFaGQwzw==}
+  /@apollo/query-planner/2.3.2_graphql@16.6.0:
+    resolution: {integrity: sha512-cYkElr1GpYmn6WnfmZc3DGfQEoOa+7DC4aOd5OLcW6l7AIFa9B374R7wmHeW68voNNhr7KYCpBBa9xuZhx7GEw==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/federation-internals': 2.3.0_graphql@16.6.0
-      '@apollo/query-graphs': 2.3.0_graphql@16.6.0
+      '@apollo/federation-internals': 2.3.2_graphql@16.6.0
+      '@apollo/query-graphs': 2.3.2_graphql@16.6.0
       chalk: 4.1.2
       deep-equal: 2.2.0
       graphql: 16.6.0
@@ -371,25 +355,14 @@ packages:
       graphql: 16.6.0
     dev: false
 
-  /@apollo/subgraph/0.6.1_graphql@16.6.0:
-    resolution: {integrity: sha512-w/6FoubSxuzXSx8uvLE1wEuHZVHRXFyfHPKdM76wX5U/xw82zlUKseVO7wTuVODTcnUzEA30udYeCApUoC3/Xw==}
+  /@apollo/subgraph/2.1.2_graphql@16.6.0:
+    resolution: {integrity: sha512-NGeiaaOVkDBc5P3GgdpOFHncB9b21mDg2NobZ1a1WkakT99XoE/D3czTux7Dzkqj4FjYHS/oiy9ghdy5/oEdkg==}
     engines: {node: '>=12.13.0'}
-    deprecated: All v0.x versions of @apollo/subgraph are now deprecated with an end-of-life date of September 22, 2023. Apollo recommends upgrading to v2.x as soon as possible. For more details, see our announcement blog post (https://www.apollographql.com/blog/announcement/backend/announcing-the-end-of-life-schedule-for-apollo-gateway-v0-x/) and documentation (https://www.apollographql.com/docs/federation/federation-2/backward-compatibility/#is-official-support-ending-for-apollogateway-v0x).
-    peerDependencies:
-      graphql: ^15.8.0 || ^16.0.0
-    dependencies:
-      '@apollo/cache-control-types': 1.0.2_graphql@16.6.0
-      graphql: 16.6.0
-    dev: false
-
-  /@apollo/subgraph/2.3.0_graphql@16.6.0:
-    resolution: {integrity: sha512-ryB1iVnnV6+xYVqryEU9ylWLpVuCkzIF0DwYpxBZqYAfRNIZHrpvou6o2k27xeJuMAh7pcDTmQW5PiCPAseubw==}
-    engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
       '@apollo/cache-control-types': 1.0.2_graphql@16.6.0
-      '@apollo/federation-internals': 2.3.0_graphql@16.6.0
+      '@apollo/federation-internals': 2.3.2_graphql@16.6.0
       graphql: 16.6.0
     dev: false
 
@@ -1955,6 +1928,10 @@ packages:
     dev: true
     optional: true
 
+  /@gar/promisify/1.1.3:
+    resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
+    dev: false
+
   /@google-cloud/common/4.0.3:
     resolution: {integrity: sha512-fUoMo5b8iAKbrYpneIRV3z95AlxVJPrjpevxs4SKoclngWZvTXBSGpNisF5+x5m+oNGve7jfB1e6vNBZBUs7Fw==}
     engines: {node: '>=12.0.0'}
@@ -2270,7 +2247,7 @@ packages:
       - supports-color
     dev: false
 
-  /@nestjs/apollo/10.1.7_nhifehbxbqf4xuejxtwyi4bl4i:
+  /@nestjs/apollo/10.1.7_3kbgmav3jhdkb2lpmwuooxn7su:
     resolution: {integrity: sha512-UQDgUgyJvrj53AcCzws6/854SVibAeyg+RGxMtb9+ENhd8snP6f7RS6mCaFY85UTAc6mo674NIUu9a/JyeYezw==}
     peerDependencies:
       '@apollo/gateway': ^0.44.1 || ^0.46.0 || ^0.48.0 || ^0.49.0 || ^0.50.0 || ^2.0.0
@@ -2291,10 +2268,10 @@ packages:
       apollo-server-fastify:
         optional: true
     dependencies:
-      '@apollo/gateway': 2.3.0_graphql@16.6.0
+      '@apollo/gateway': 2.1.2_graphql@16.6.0
       '@nestjs/common': 9.3.2_welcnyot5bzd5wa2aovbkxpi4i
       '@nestjs/core': 9.3.2_ycjbddrylidedcgziugeskgnam
-      '@nestjs/graphql': 10.1.7_j3knht5w23yiivui53rhp2udou
+      '@nestjs/graphql': 10.1.7_fh733p5hzepwwwbg4kmilggkly
       apollo-server-express: 3.11.1_5ha345eiak62qiwwva5z4dp6gu
       graphql: 16.6.0
       iterall: 1.3.0
@@ -2395,7 +2372,7 @@ packages:
       - encoding
     dev: false
 
-  /@nestjs/graphql/10.1.7_j3knht5w23yiivui53rhp2udou:
+  /@nestjs/graphql/10.1.7_fh733p5hzepwwwbg4kmilggkly:
     resolution: {integrity: sha512-InWjG3dV8D/1iAHeAQD6tiDg3HyVNkUILTev3DU33Q0xpFzv+PqtKQR35a9xOncLY9ZS68kwkGB5wksfMyGjAg==}
     peerDependencies:
       '@apollo/subgraph': ^0.1.5 || ^0.3.0 || ^0.4.0 || ^2.0.0
@@ -2416,7 +2393,7 @@ packages:
       ts-morph:
         optional: true
     dependencies:
-      '@apollo/subgraph': 2.3.0_graphql@16.6.0
+      '@apollo/subgraph': 2.1.2_graphql@16.6.0
       '@graphql-tools/merge': 8.3.12_graphql@16.6.0
       '@graphql-tools/schema': 9.0.10_graphql@16.6.0
       '@graphql-tools/utils': 9.1.1_graphql@16.6.0
@@ -2526,11 +2503,21 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@npmcli/fs/3.1.0:
-    resolution: {integrity: sha512-7kZUAaLscfgbwBQRbvdMYaZOWyMEcPTH/tJjnyAWJ/dvvs9Ef+CERx/qJb9GExJpl1qipaDGn7KqHnFGGixd0w==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /@npmcli/fs/2.1.2:
+    resolution: {integrity: sha512-yOJKRvohFOaLqipNtwYB9WugyZKhC/DZC4VYPmpaCzDBrA8YpK3qHZ8/HGscMnE4GqbkLNuVcCnxkeQEdGt6LQ==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
+      '@gar/promisify': 1.1.3
       semver: 7.3.8
+    dev: false
+
+  /@npmcli/move-file/2.0.1:
+    resolution: {integrity: sha512-mJd2Z5TjYWq/ttPLLGqArdtnC74J6bOzg4rMDnN+p1xTacZ2yPRCk2y0oSWQtygLR9YVQXgOcONrwtnk3JupxQ==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This functionality has been moved to @npmcli/fs
+    dependencies:
+      mkdirp: 1.0.4
+      rimraf: 3.0.2
     dev: false
 
   /@nrwl/cli/15.6.3_@swc+core@1.3.32:
@@ -3874,23 +3861,28 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /cacache/17.0.4:
-    resolution: {integrity: sha512-Z/nL3gU+zTUjz5pCA5vVjYM8pmaw2kxM7JEiE0fv3w77Wj+sFbi70CrBruUWH0uNcEdvLDixFpgA2JM4F4DBjA==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /cacache/16.1.3:
+    resolution: {integrity: sha512-/+Emcj9DAXxX4cwlLmRI9c166RuL3w30zp4R7Joiv2cQTtTtA+jeuCAjH3ZlGnYS3tKENSrKhAzVVP9GVyzeYQ==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
-      '@npmcli/fs': 3.1.0
-      fs-minipass: 3.0.1
+      '@npmcli/fs': 2.1.2
+      '@npmcli/move-file': 2.0.1
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
       glob: 8.1.0
+      infer-owner: 1.0.4
       lru-cache: 7.14.1
-      minipass: 4.0.3
+      minipass: 3.3.6
       minipass-collect: 1.0.2
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.4
+      mkdirp: 1.0.4
       p-map: 4.0.0
       promise-inflight: 1.0.1
-      ssri: 10.0.1
+      rimraf: 3.0.2
+      ssri: 9.0.1
       tar: 6.1.13
-      unique-filename: 3.0.0
+      unique-filename: 2.0.1
     transitivePeerDependencies:
       - bluebird
     dev: false
@@ -4818,13 +4810,6 @@ packages:
     dependencies:
       minipass: 3.3.6
 
-  /fs-minipass/3.0.1:
-    resolution: {integrity: sha512-MhaJDcFRTuLidHrIttu0RDGyyXs/IYHVmlcxfLAEFIWjc1vdLAkdwT7Ace2u7DbitWC0toKMl5eJZRYNVreIMw==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
-    dependencies:
-      minipass: 4.0.3
-    dev: false
-
   /fs-monkey/1.0.3:
     resolution: {integrity: sha512-cybjIfiiE+pTWicSCLFHSrXZ6EilF30oh91FDP9S2B051prEa7QWfrVTQm10/dDpswBDXZugPa1Ogu8Yh+HV0Q==}
     dev: true
@@ -5213,6 +5198,10 @@ packages:
   /indent-string/4.0.0:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
     engines: {node: '>=8'}
+    dev: false
+
+  /infer-owner/1.0.4:
+    resolution: {integrity: sha512-IClj+Xz94+d7irH5qRyfJonOdfTzuDaifE6ZPWfx0N0+/ATZCbuTPq2prFl526urkQd90WyUKIh1DfBQ2hMz9A==}
     dev: false
 
   /inflight/1.0.6:
@@ -5747,10 +5736,6 @@ packages:
     resolution: {integrity: sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==}
     dev: false
 
-  /lodash.xorby/4.7.0:
-    resolution: {integrity: sha512-gYiD6nvuQy0AEkMoUju+t4f4Rn18fjsLB/7x7YZFqtFT9kmegRLrj/uGEQVyVDy7otTmSrIMXNOk2wwuLcfHCQ==}
-    dev: false
-
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
@@ -5819,25 +5804,26 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: true
 
-  /make-fetch-happen/11.0.3:
-    resolution: {integrity: sha512-oPLh5m10lRNNZDjJ2kP8UpboUx2uFXVaVweVe/lWut4iHWcQEmfqSVJt2ihZsFI8HbpwyyocaXbCAWf0g1ukIA==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /make-fetch-happen/10.2.1:
+    resolution: {integrity: sha512-NgOPbRiaQM10DYXvN3/hhGVI2M5MtITFryzBGxHM5p4wnFxsVCbxkrBrDsk+EZ5OB4jEOT7AjDxtdF+KVEFT7w==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
       agentkeepalive: 4.2.1
-      cacache: 17.0.4
+      cacache: 16.1.3
       http-cache-semantics: 4.1.1
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-lambda: 1.0.1
       lru-cache: 7.14.1
-      minipass: 4.0.3
-      minipass-fetch: 3.0.1
+      minipass: 3.3.6
+      minipass-collect: 1.0.2
+      minipass-fetch: 2.1.2
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.4
       negotiator: 0.6.3
       promise-retry: 2.0.1
       socks-proxy-agent: 7.0.0
-      ssri: 10.0.1
+      ssri: 9.0.1
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -5962,11 +5948,11 @@ packages:
       minipass: 3.3.6
     dev: false
 
-  /minipass-fetch/3.0.1:
-    resolution: {integrity: sha512-t9/wowtf7DYkwz8cfMSt0rMwiyNIBXf5CKZ3S5ZMqRqMYT0oLTp0x1WorMI9WTwvaPg21r1JbFxJMum8JrLGfw==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /minipass-fetch/2.1.2:
+    resolution: {integrity: sha512-LT49Zi2/WMROHYoqGgdlQIZh8mLPZmOrN2NdJjMXxYe4nkN6FUyuPuOAOedNJDrx0IRGg9+4guZewtp8hE6TxA==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
-      minipass: 4.0.3
+      minipass: 3.3.6
       minipass-sized: 1.0.3
       minizlib: 2.1.2
     optionalDependencies:
@@ -6934,11 +6920,11 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: true
 
-  /ssri/10.0.1:
-    resolution: {integrity: sha512-WVy6di9DlPOeBWEjMScpNipeSX2jIZBGEn5Uuo8Q7aIuFEuDX0pw8RxcOjlD1TWP4obi24ki7m/13+nFpcbXrw==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /ssri/9.0.1:
+    resolution: {integrity: sha512-o57Wcn66jMQvfHG1FlYbWeZWW/dHZhJXjpIcTfXldXEk5nz5lStPo3mK0OJQfGR3RbZUlbISexbljkJzuEj/8Q==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
-      minipass: 4.0.3
+      minipass: 3.3.6
     dev: false
 
   /standard-as-callback/2.1.0:
@@ -7386,16 +7372,16 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /unique-filename/3.0.0:
-    resolution: {integrity: sha512-afXhuC55wkAmZ0P18QsVE6kp8JaxrEokN2HGIoIVv2ijHQd419H0+6EigAFcIzXeMIkcIkNBpB3L/DXB3cTS/g==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /unique-filename/2.0.1:
+    resolution: {integrity: sha512-ODWHtkkdx3IAR+veKxFV+VBkUMcN+FaqzUUd7IZzt+0zhDZFPFxhlqwPF3YQvMHx1TD0tdgYl+kuPnJ8E6ql7A==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
-      unique-slug: 4.0.0
+      unique-slug: 3.0.0
     dev: false
 
-  /unique-slug/4.0.0:
-    resolution: {integrity: sha512-WrcA6AyEfqDX5bWige/4NQfPZMtASNVxdmWR76WESYQVAACSgWcR6e9i0mofqqBxYFtL4oAxPIptY73/0YE1DQ==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /unique-slug/3.0.0:
+    resolution: {integrity: sha512-8EyMynh679x/0gqE9fT9oilG+qEt+ibFyqjuVTsZn1+CMxH+XLlpvr2UZx4nVcCwTpx81nICr2JQFkM+HPLq4w==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
       imurmurhash: 0.1.4
     dev: false
